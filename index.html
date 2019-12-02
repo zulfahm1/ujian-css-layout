@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Ujian css</title>
+</head>
+<body>
+	<div id="header">
+		<div id="head_left">
+			<a href="#"><img src="asset/logo-black.png"></a>
+		</div>
+		<div id="head_right">
+			<div id="search">
+				<div id="input"><input type="text" name="search" placeholder="Enter keywords...">
+					<div id="iconSearch"><a href="#search"><img src="asset/icon-search.png"></a></div>
+				</div>
+			</div>
+			<div id="menu">
+				<a href="#">HOME</a>
+				<a href="#">ABOUT US</a>
+				<a href="#form">PORTOFOLIO</a>
+				<a href="#">BLOG</a>
+				<a href="#contact">CONTACT US</a>
+			</div>
+		</div>
+	</div>
+	<div id="middle">
+		<div id="contact">
+			<a href="#">CONTACT US</a>
+			<img src="asset/segitiga.png">
+		</div>
+		<div id="main">
+			<div id="form">
+				<p>Contact us about anything related to our company or services.</p><br>
+				<p>We'll do our best to get back to you as soon as possible.</p><br><br><br>
+				<form action="thanks.html" method="POST">
+					<table>
+						<tr>
+							<td><label for="names"><span class="bintang" id="bintang1">*</span>Your Name</label></td>
+							<td><input type="text" name="name" id="names" required></td>
+						</tr>
+						<tr>
+							<td>Phone Number</td>
+							<td><input type="text" name="phone" id="phones" placeholder="e.g. (+32).81.81.37.00"></td>
+						</tr>
+						<tr>
+							<td><label for="emails"><span class="bintang" id="bintang2">*</span>Email</label></td>
+							<td><input type="email" name="email" id="emails" required></td>
+						</tr>
+						<tr>
+							<td>Your Company</td>
+							<td><input type="text" name="company" id="companies"></td>
+						</tr>
+						<tr>
+							<td>Subject</td>
+							<td><input type="text" name="subject" id="subjects"></td>
+						</tr>
+						<tr>
+							<td id="positioninggu"><h3><label for="questions"><span class="bintang" id="bintang3">*</span>Your Question</label></h3></td>
+							<td><textarea id="questions" name="question" required></textarea></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><button type="submit" onclick="popup();">SUBMIT</button></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div id="sidebar">
+				<div id="sidebar_content">
+					<p>
+						<span style="font-weight: bold;">YourCompany</span><br>
+						1725 Slough Ave. <br>
+						18540 Scranton <br>
+						United States
+					</p>
+						<a href="#sidebar_content"><span><img src="asset/call.png"></span> 0822 4817 8080</a><br> 
+						<a href="#sidebar_content"><span><img id="msg" src="asset/message.png"></span> info@example.com</a> 
+					<div id="maps">
+						<iframe width="280" height="240" src="https://maps.google.com/maps?width=280&amp;height=240&amp;hl=en&amp;q=Scranton%2C%20United%20States+(Title)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+						<div>
+							<small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/it/">Embedgooglemaps IT</a> & <a href="http://lasvegasstatistics.embedgooglemaps.com">las vegas economy</a></small>
+						</div>
+						<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="down"></div>
+	</div>
+	<div id="footer">
+		<div >
+			<div id="box1">
+				<h1>Contact Us</h1>
+				<p style="padding-bottom: 7px;">Company Name <br>Street Name & Number <br>Town <br>Postcode/Zip</p>
+				<p>Tel : xxxxx xxxxxxxxxx <br>Fax : xxxxx xxxxxxxxxx <br>Email : contact@mydomain.com</p>
+			</div>
+		</div>
+		<div>
+			<div id="box2">
+				<h1>Quick Links</h1>
+				<a href="#box2">Link Text Here</a><br>
+				<a href="#box2">Link Text Here</a><br>
+				<a href="#box2">Link Text Here</a><br>
+				<a href="#box2" id="last">Link Text Here</a><br>
+			</div>
+		</div>
+		<div>
+			<div id="box3">
+				<h1>From The Blog</h1>
+				<p style="padding-bottom: 7px;"> 
+					<span style="font-size: 14px;font-weight: bold;color: #43464e;">Blog Post Title</span><br>
+					Posted by Admin on Nov 14, 2019
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p><br>
+				<a href="#box3">Read More >></a>
+			</div>
+		</div>
+		<div>
+			<div id="box4">
+				<h1>Grab Our Newsletter</h1>
+				<form action="#box4" method="POST">
+					<input type="text" name="name" placeholder="Name">
+					<input type="email" name="email" placeholder="Email">
+					<button type="submit">SUBMIT</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="footer2">
+		<div id="copyright">
+			<p>Copyright © 2017 - All Rights Reserved</p>
+		</div>
+		<div id="pondok">
+			<p>PondokIT.org</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function popup() {
+			var name = document.getElementById('names').value;
+			var email = document.getElementById('emails').value;
+			var question = document.getElementById('questions').value;
+			var bin1 = document.getElementById('bintang1');
+			var bin2 = document.getElementById('bintang2');
+			var bin3 = document.getElementById('bintang3');
+			if (!name && !email && !question) {
+				bin1.style.display = "block";
+				bin2.style.display = "block";
+				bin3.style.display = "block";
+				return alert("Please Check Again! Your NAME, EMAIL & QUESTION is empty!!");
+			}
+			else if ( !email && !question) {
+				bin1.style.display = "none";
+				bin2.style.display = "block";
+				bin3.style.display = "block";
+				return alert("Please Check Again! Your EMAIL & QUESTION is empty!!");
+			}
+			else if ( !name && !question) {
+				bin1.style.display = "block";
+				bin2.style.display = "none";
+				bin3.style.display = "block";
+				return alert("Please Check Again! Your NAME & QUESTION is empty!!");
+			}
+			else if ( !email && !name) {
+				bin1.style.display = "block";
+				bin2.style.display = "block";
+				bin3.style.display = "none";
+				return alert("Please Check Again! Your NAME & EMAIL is empty!!");
+			}
+			else if (!name) {
+				bin1.style.display = "block";
+				bin2.style.display = "none";
+				bin3.style.display = "none";
+				return alert("Please Check Again! Your NAME is empty!!");
+			}
+			else if (!email) {
+				bin1.style.display = "none";
+				bin2.style.display = "block";
+				bin3.style.display = "none";
+				return alert("Please Check Again! Your EMAIL is empty!!");
+			}
+			else if (!question) {
+				bin1.style.display = "none";
+				bin2.style.display = "none";
+				bin3.style.display = "block";
+				return alert("Please Check Again! Your QUESTION is empty!!");
+			}else { alert("Regristration Success!") }
+		}
+	</script>
+</body>
+</html> 
